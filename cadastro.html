@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição da ONG e seus projetos sociais.">
+    <link rel="icon" type="image/png" href="imagens/icon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Elo Social | Cadastro</title> </head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="imagens/logo-ong.png" alt="Logo da ONG"> </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Participe</a></li>
+            </ul>
+        </nav>
+        <button class="menu-hamburguer" id="menu-toggle">
+            <span class="barra"></span>
+            <span class="barra"></span>
+            <span class="barra"></span>
+        </button>
+    </header>
+
+    <main class="container">
+    <h1>Formulário de Cadastro</h1>
+    <p>Preencha os dados abaixo para se tornar um voluntário ou apoiador da nossa causa!</p>
+
+    <form> <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome_completo" required placeholder="Digite seu nome completo" title="Digite seu nome completo">
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email_usuario" required placeholder="seuemail@dominio.com" title="Digite um e-mail válido">
+            </div>
+
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf_usuario" required placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF no formato: 000.000.000-00">
+            </div>
+
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone_usuario" required placeholder="(00) 00000-0000" title="Digite o seu número de telefone">
+            </div>
+
+            <div>
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" id="nascimento" name="data_nascimento" required title="Insira sua data de nascimento">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <div>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep_usuario" required placeholder="00000-000" title="Insira o seu CEP" >
+            </div>
+            
+            <div>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco_usuario" required placeholder="Rua, Avenida, etc." title="Insira o seu endereço">
+            </div>
+
+            <div>
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade_usuario" required title="Insira a sua cidade">
+            </div>
+
+            <div>
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado_usuario" required title="Selecione o seu estado">
+                    <option value="">Selecione...</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    </select>
+            </div>
+        </fieldset>
+        <button type="submit">Enviar Cadastro</button>
+    </form>
+</main>
+    <footer>
+        <p>&copy; 2025 Elo Social. Todos os direitos reservados.</p>
+        <p>Porto Alegre, Rua Lorem Ipsum | 51 9 9999-9999 | elosocial@gmail.com</p>
+    </footer>
+</body>
+</html>
