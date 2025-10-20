@@ -274,11 +274,11 @@ button[type="submit"]:active {
 
 @media (max-width: 768px) {
     .container {
-        padding: var(--espacamento-md); /* Menos espaçamento lateral */
+        padding: var(--espacamento-md);
     }
 
     h1 {
-        font-size: 2rem; /* 32px */
+        font-size: 2rem;
     }
 }
 
@@ -288,6 +288,6 @@ button[type="submit"]:active {
     }
     
     body {
-        font-size: var(--fonte-tamanho-sm); /* Fonte base um pouco menor */
+        font-size: var(--fonte-tamanho-sm);
     }
 }
